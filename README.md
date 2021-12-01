@@ -2,6 +2,13 @@
 
 Hey, this is my React.Js note app
 
+- a simple notes app with the following details
+- The User is able to do the CRUD operation.
+- Navigate through multiple notes.
+- Search function to search notes.
+- Uses tailwind CSS.
+- Uses localStorage to store notes.
+
 ### Built with
 
 - Semantic HTML5 markup
