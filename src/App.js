@@ -28,17 +28,17 @@ function App() {
   //implementing search as a state
   const [searchText, setSearchText] = useState("");
 
-  // // the useEffect saves the noets to local storage and retrieve em
-  // useEffect(() => {
-  //   const savedNotes = JSON.parse(localStorage.getItem("react-notes-app-data"));
+  // the useEffect saves the noets to local storage and retrieve em
+  useEffect(() => {
+    const savedNotes = JSON.parse(localStorage.getItem("react-notes-app-data"));
 
-  //   if (savedNotes) {
-  //     setNotes(savedNotes);
-  //   }
-  // }, []);
-  // useEffect(() => {
-  //   localStorage.setItem("react-notes-app-data", JSON.stringify(notes));
-  // }, [notes]);
+    if (savedNotes) {
+      setNotes(savedNotes);
+    }
+  }, []);
+  useEffect(() => {
+    localStorage.setItem("react-notes-app-data", JSON.stringify(notes));
+  }, [notes]);
 
   // Adds the new note with id,text and generate a new date based on the note entered date
   const AddNote = (text) => {
