@@ -29,6 +29,7 @@ const AddNote = ({ handleAddNote }) => {
         className="text-yellow-50 border-none resize-none bg-blue-500 outline-none placeholder-white"
         cols="10"
         rows="10"
+        maxLength={200}
         placeholder="Add a note..."
         onChange={handleChange}
       ></textarea>
