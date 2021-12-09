@@ -29,16 +29,16 @@ function App() {
   const [searchText, setSearchText] = useState("");
 
   // the useEffect saves the noets to local storage and retrieve em
-  useEffect(() => {
-    const savedNotes = JSON.parse(localStorage.getItem("react-notes-app-data"));
+  // useEffect(() => {
+  //   const savedNotes = JSON.parse(localStorage.getItem("react-notes-app-data"));
 
-    if (savedNotes) {
-      setNotes(savedNotes);
-    }
-  }, []);
-  useEffect(() => {
-    localStorage.setItem("react-notes-app-data", JSON.stringify(notes));
-  }, [notes]);
+  //   if (savedNotes) {
+  //     setNotes(savedNotes);
+  //   }
+  // }, []);
+  // useEffect(() => {
+  //   localStorage.setItem("react-notes-app-data", JSON.stringify(notes));
+  // }, [notes]);
 
   // Adds the new note with id,text and generate a new date based on the note entered date
   const AddNote = (text) => {
@@ -59,6 +59,7 @@ function App() {
   // Edits the note by preserving it's text and moving to to editable note component
   const editNote = (id) => {
     const newNotes = notes.filter((note) => note.id !== id);
+    AddNote.text=("")
     setNotes(newNotes);
   };
 

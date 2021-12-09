@@ -4,7 +4,7 @@ import { MdDeleteForever } from "react-icons/md"; //Material UI delete icon
 const Note = ({ id, text, date, handleDeleteNote, handleEditNote }) => {
   return (
     <div className="note bg-green-400 rounded-xl p-4 min-h-150 justify-between flex flex-col gao whitespace-pre-wrap ">
-      <span>{text}</span>
+      <span id="noteText">{text}</span>
       <div className="footer flex items-center justify-between">
         <button
           className="save bg-indigo-50 border-none rounded-xl px-3 py-1 hover:bg-indigo-400 justify-between transition-all cursor-pointer whitespace-pre-wrap"
