@@ -11,7 +11,7 @@ Hey, this is my React.Js note app
 
 ### Built with
 
-- Semantic HTML5 markup
+- HTML5
 - [React](https://reactjs.org/) - JS library
 - [Tailwind CSS](https://tailwindcss.com/) - For styles
 
